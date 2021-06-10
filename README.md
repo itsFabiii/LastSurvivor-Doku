@@ -19,7 +19,7 @@ Beispiel: Das Item `Stein` kann so geschrieben werden. Sollte es aber `schwerer 
 
 ### Looting `.loot`
 
-- `.loot` - Um nach Items zu suchen musst du diesen Befehl eingeben. Du findest dann zufällig ein Item in deiner Umgebung.
+- `.loot` - Um nach Items zu suchen musst du diesen Befehl eingeben. Du findest dann zufällig ein Item in deiner Umgebung. Du kannst nur 10 mal pro Stunde den Befehl nutzen.
 
 ### Inventar `.inventory`
 
@@ -73,6 +73,9 @@ Nun können Spieler Items benutzen oder wegwerfen und Items mit anderen Spielern
 
 #### Items `.items`
 Der Befehl wurde von `.items` in `.item` umbenannt.
+
+#### Looting `.loot`
+Der Befehl kann jetzt nur noch 10 mal pro Stunde verwendet werden.
 
 #### Hilfe
 Dem Hilfetext wurde der Link zu dieser Seite hinzugefügt.
