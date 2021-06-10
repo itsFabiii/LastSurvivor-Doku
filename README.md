@@ -50,7 +50,7 @@ Beispiel: Das Item `Stein` kann so geschrieben werden. Sollte es aber `schwerer 
 - `.item name <aktueller Name> <neuer Name>` - Mit diesem Befehl kann man ein Item ganz einfach umbennen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt.
 - `.item prozent <Name> <neue Wahrscheinlichkeit>` - Mit diesem Befehl kann die Wahrscheinlichkeit eines Items geändert werden. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt.
 - `.item give <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item geben möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item give Fabiii "Stein" 10`
-- - `.item remove <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item wegnehmen möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item remove Fabiii "Stein" 4`
+- `.item remove <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item wegnehmen möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item remove Fabiii "Stein" 4`
 
 
 
