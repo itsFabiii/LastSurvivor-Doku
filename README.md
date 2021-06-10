@@ -25,6 +25,11 @@ Beispiel: Das Item `Stein` kann so geschrieben werden. Sollte es aber `schwerer 
 
 - `.inventory show [Sortierung]` - Mit diesem Befehl kannst du dir in deinem Inventar anzeigen welche Items du wie oft hast. Ohne Sortierung werden die Items in der Reihenfolge angezeigt wie du sie gefunden hast. Du kannst aber auch nach `name` oder `anzahl` sortieren.
 
+### Items `.item`
+
+- `.item use <Itemname> [Anzahl]` - Benutze im RP ein Item oder wird einfach ein paar Items weg. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item use "Stein" 4`
+- `.item trade <Charaktername> <Itemname> [Anzahl]` - Um einem anderen Charakter ein Item zu geben kannst du diesen Befehl nutzen. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item trade Fabiii "Stein" 4`
+
 ## Hilfe für das Team
 
 ### Charakter `.char`
@@ -38,12 +43,15 @@ Beispiel: Das Item `Stein` kann so geschrieben werden. Sollte es aber `schwerer 
 - `.money give <Charaktername> <Geldmenge>` - Füge einem Charakter diese Geldmenge zu seinem aktuellen Kontostand hinzu. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.money give Fabiii 1000`
 - `.money set <Charaktername> <Geldmenge>` - Setzte den Kontostand auf die angegebene Geldmenge. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.money set Fabiii 5000` 
 
-### Items `.items`
+### Items `.item`
 
-- `.items new <Name> <Wahrscheinlichkeit>` - Um ein neues Item anzulegen kannst du das mit diesem Befehl machen. Itemnamen sind einmalig und dürfen nich mehrmals vorkommen. Die Wahrscheinlichkeit gibt an wie wahrscheinlich es ist dieses Item zu finden. Die Wahrscheinlichkeit pro Item ist auf 100 limitiert. Bsp.: `.items new Messer 5`
-- `.items show [Sortierung]` - Hier können alle Items mit Wahrscheinlichkeit angezeigt werden die bereits exestieren. Ohne Sortierung werden die Items in der Reihenfolge angezeigt wie sie erstellt wurden. Mit `name` oder `prozent` kann man alphabetisch nach dem Namen oder aufsteigend nach der Wahrscheinlichkeit sortieren.
+- `.item new <Name> <Wahrscheinlichkeit>` - Um ein neues Item anzulegen kannst du das mit diesem Befehl machen. Itemnamen sind einmalig und dürfen nich mehrmals vorkommen. Die Wahrscheinlichkeit gibt an wie wahrscheinlich es ist dieses Item zu finden. Die Wahrscheinlichkeit pro Item ist auf 100 limitiert. Bsp.: `.items new Messer 5`
+- `.item show [Sortierung]` - Hier können alle Items mit Wahrscheinlichkeit angezeigt werden die bereits exestieren. Ohne Sortierung werden die Items in der Reihenfolge angezeigt wie sie erstellt wurden. Mit `name` oder `prozent` kann man alphabetisch nach dem Namen oder aufsteigend nach der Wahrscheinlichkeit sortieren.
 - `.item name <aktueller Name> <neuer Name>` - Mit diesem Befehl kann man ein Item ganz einfach umbennen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt.
 - `.item prozent <Name> <neue Wahrscheinlichkeit>` - Mit diesem Befehl kann die Wahrscheinlichkeit eines Items geändert werden. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt.
+- `.item give <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item geben möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item give Fabiii "Stein" 10`
+- - `.item remove <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item wegnehmen möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item remove Fabiii "Stein" 4`
+
 
 
 
@@ -53,6 +61,21 @@ Alle bemerkenswerten Änderungen an diesem Projekt werden in dieser Datei dokume
 
 
 # Released
+
+## 0.2.0 [10.06.2021]
+
+### Added
+
+#### Item `-item`
+Nun können Spieler Items benutzen oder wegwerfen und Items mit anderen Spielern tauschen. Das Team kann nun Charakteren Items geben oder auch wegnehmen.
+
+### Changed
+
+#### Items `.items`
+Der Befehl wurde von `.items` in `.item` umbenannt.
+
+#### Hilfe
+Dem Hilfetext wurde der Link zu dieser Seite hinzugefügt.
 
 ## 0.1.0 [07.06.2021]
 
@@ -74,6 +97,9 @@ Befehl mit dem momentan überall nach einem Zufallsprinzip gelootet werden kann.
 
 #### Items `-items`
 Dieser Befehl ermögtlich dem Team vorhanden Iteams anzuschauen oder zu bearbeiten. Damit können aber auch neue Items hinzugefügt werden.
+
+#### Hilfe
+Eine Hilfe zu allen Befehlen.
 
 #### Backend
 Im Hintergrund werden Daten gesammelt für ein zukünftiges Levelsystem und die Aktivität.
