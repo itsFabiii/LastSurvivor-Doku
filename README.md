@@ -66,7 +66,7 @@ Alle bemerkenswerten Änderungen an diesem Projekt werden in dieser Datei dokume
 
 ### Added
 
-#### Item `-item`
+#### Item `.item`
 Nun können Spieler Items benutzen oder wegwerfen und Items mit anderen Spielern tauschen. Das Team kann nun Charakteren Items geben oder auch wegnehmen.
 
 ### Changed
