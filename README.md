@@ -101,7 +101,7 @@ Befehl mit dem momentan überall nach einem Zufallsprinzip gelootet werden kann.
 #### Inventar `.inventory`
 Über diesen Befehl können die Items die gelootet wurden eingesehen werden.
 
-#### Items `-items`
+#### Items `.items`
 Dieser Befehl ermögtlich dem Team vorhanden Iteams anzuschauen oder zu bearbeiten. Damit können aber auch neue Items hinzugefügt werden.
 
 #### Hilfe
