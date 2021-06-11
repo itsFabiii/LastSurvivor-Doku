@@ -80,6 +80,9 @@ Der Befehl kann jetzt nur noch 10 mal pro Stunde verwendet werden.
 #### Hilfe
 Dem Hilfetext wurde der Link zu dieser Seite hinzugefügt.
 
+#### Backend
+Das Bild, wenn jemand den Server betritt, wurde aktualisiert, dass der Text nun in 2 Zeilen steht. Damit bei langen Namen nichts abgeschnitten wird.
+
 ## 0.1.0 [07.06.2021]
 
 ### Added
