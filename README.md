@@ -60,7 +60,7 @@ Alle bemerkenswerten Änderungen an diesem Projekt werden in dieser Datei dokume
 
 # Released
 
-## 0.3.0[12.06.2021]
+## 0.3.0 [12.06.2021]
 
 #### Item `.item`
 Das Team kann jetzt nach Items suchen um nicht mehr die ganze Liste nach einem bestimmten Item zu durchsuchen.
