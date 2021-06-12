@@ -51,9 +51,7 @@ Beispiel: Das Item `Stein` kann so geschrieben werden. Sollte es aber `schwerer 
 - `.item prozent <Name> <neue Wahrscheinlichkeit>` - Mit diesem Befehl kann die Wahrscheinlichkeit eines Items geändert werden. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt.
 - `.item give <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item geben möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item give Fabiii "Stein" 10`
 - `.item remove <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item wegnehmen möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item remove Fabiii "Stein" 4`
-
-
-
+- `.item search <Itemname>` - Mit diesem Befehl kann nach Items gesucht werden. Sollte man nicht den genauen Namen kennen so können Wildcarts benutzt werden. `%` um nach beliebigen anderen Buchstaben oder Wörtern zu suchen. Bsp.: `.item search "%Stein%"` (Um das Ergebniss zu sehen probiere es einfach aus :D)
 
 # Changelog
 
@@ -61,6 +59,11 @@ Alle bemerkenswerten Änderungen an diesem Projekt werden in dieser Datei dokume
 
 
 # Released
+
+## 0.3.0[12.06.2021]
+
+#### Item `.item`
+Das Team kann jetzt nach Items suchen um nicht mehr die ganze Liste nach einem bestimmten Item zu durchsuchen.
 
 ## 0.2.0 [10.06.2021]
 
