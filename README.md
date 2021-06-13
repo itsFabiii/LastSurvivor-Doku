@@ -65,6 +65,9 @@ Alle bemerkenswerten Änderungen an diesem Projekt werden in dieser Datei dokume
 #### Item `.item`
 Das Team kann jetzt nach Items suchen um nicht mehr die ganze Liste nach einem bestimmten Item zu durchsuchen.
 
+#### Backend
+Der Bot irgnoriert jetzt Nachrichten von anderen Bots.
+
 ## 0.2.0 [10.06.2021]
 
 ### Added
