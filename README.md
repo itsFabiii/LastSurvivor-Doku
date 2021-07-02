@@ -14,21 +14,32 @@ Beispiel: Das Item `Stein` kann so geschrieben werden. Sollte es aber `schwerer 
 
 ### Geld `.money`
 
-- `.money show` - Mit diesem Befehl kannst du dir Informationen wie Name, Kontostand und Aktivität zu deinen Charkateren anschauen.
+- `.money info` - Mit diesem Befehl kannst du dir Informationen wie Name, Kontostand und Aktivität zu deinen Charkateren anschauen.
 - `.money pay <Charaktername des Empfängers> <Geldmenge>` - Um einen anderen Charakter zu bezahlen kannst das mit diesem Befehl machen. Als erstes musst du den Charakter angeben an wen du zahlen willst und dann wie viel Geld. Das Geld wird von dem Konto von deinem aktiven Charakter abgezogen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt.
 
 ### Looting `.loot`
 
-- `.loot` - Um nach Items zu suchen musst du diesen Befehl eingeben. Du findest dann zufällig ein Item in deiner Umgebung. Du kannst nur 10 mal pro Stunde den Befehl nutzen.
+- `.loot [Ort]` - Um nach Items zu suchen musst du diesen Befehl eingeben. Wenn kein Ort angegeben wird, wird allgemein gesucht und alle Items gefunden werden. Wenn ein Ort angegeben wurde, wird speziell Items für diesen Ort gefunden. Mögliche Orte müssen irgendwo auf dem Discord stehen.
 
-### Inventar `.inventory`
+### Inventar `.inv`
 
-- `.inventory show [Sortierung]` - Mit diesem Befehl kannst du dir in deinem Inventar anzeigen welche Items du wie oft hast. Ohne Sortierung werden die Items in der Reihenfolge angezeigt wie du sie gefunden hast. Du kannst aber auch nach `name` oder `anzahl` sortieren.
+- `.inv show [Sortierung]` - Mit diesem Befehl kannst du dir in deinem Inventar anzeigen welche Items du wie oft hast. Ohne Sortierung werden die Items in der Reihenfolge angezeigt wie du sie gefunden hast. Du kannst aber auch nach `name` oder `anzahl` sortieren.
 
 ### Items `.item`
 
 - `.item use <Itemname> [Anzahl]` - Benutze im RP ein Item oder wird einfach ein paar Items weg. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item use "Stein" 4`
 - `.item trade <Charaktername> <Itemname> [Anzahl]` - Um einem anderen Charakter ein Item zu geben kannst du diesen Befehl nutzen. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item trade Fabiii "Stein" 4`
+
+### Crafting `.craft`
+
+- `.craft <Itemname>` - Mit diesem Befehl kannst du aus Items die du in deinem Inventar hast ein neues Item herstellen. Bsp.: `. craft "Tür"`
+- `.craft show` - Hier kannst du eine Liste sehen aller möglichen Items sehen die hergestellt werden.
+
+### Handeln mit Händler `.trade`
+
+- `.trade show` - Hier werden die Angebote vom Händler angezeigt. Es gibt eine Kategorie für den Verkauf und eine für den Ankauf.
+- `.trade buy <Itemname>` - Mit diesem Befehl kauft man ein Item von dem Händler. Du musst dafür sorgen, dass du genug Geld auf dem Konto hast. Es kann immer nur ein Item aufeinmal gekauft werden.
+- `.trade sell <Itemname>` - Mit diesem Befehl kannst du ein Item aus deinem Inventar an den Händler verkaufen. Es kann immer nur ein Item aufeinmal verkauft werden.
 
 ## Hilfe für das Team
 
@@ -46,12 +57,32 @@ Beispiel: Das Item `Stein` kann so geschrieben werden. Sollte es aber `schwerer 
 ### Items `.item`
 
 - `.item new <Name> <Wahrscheinlichkeit>` - Um ein neues Item anzulegen kannst du das mit diesem Befehl machen. Itemnamen sind einmalig und dürfen nich mehrmals vorkommen. Die Wahrscheinlichkeit gibt an wie wahrscheinlich es ist dieses Item zu finden. Die Wahrscheinlichkeit pro Item ist auf 100 limitiert. Bsp.: `.items new Messer 5`
+- `.item delete <Name>` - Es können über diesem Befehl Items wieder komplett aus dem System gelöscht werden. Vorsicht es werden logischerweise auch aus allen Items gelöscht. Ein weiter Hinweis kommt nicht. Bsp.: `.items delete Messer`
 - `.item show [Sortierung]` - Hier können alle Items mit Wahrscheinlichkeit angezeigt werden die bereits exestieren. Ohne Sortierung werden die Items in der Reihenfolge angezeigt wie sie erstellt wurden. Mit `name` oder `prozent` kann man alphabetisch nach dem Namen oder aufsteigend nach der Wahrscheinlichkeit sortieren.
 - `.item name <aktueller Name> <neuer Name>` - Mit diesem Befehl kann man ein Item ganz einfach umbennen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt.
-- `.item prozent <Name> <neue Wahrscheinlichkeit>` - Mit diesem Befehl kann die Wahrscheinlichkeit eines Items geändert werden. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt.
+- `.item chance <Name> <neue Wahrscheinlichkeit>` - Mit diesem Befehl kann die Wahrscheinlichkeit eines Items geändert werden. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt.
 - `.item give <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item geben möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item give Fabiii "Stein" 10`
-- `.item remove <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item wegnehmen möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item remove Fabiii "Stein" 4`
-- `.item search <Itemname>` - Mit diesem Befehl kann nach Items gesucht werden. Sollte man nicht den genauen Namen kennen so können Wildcarts benutzt werden. `%` um nach beliebigen anderen Buchstaben oder Wörtern zu suchen. Bsp.: `.item search "%Stein%"` (Um das Ergebniss zu sehen probiere es einfach aus :D)
+- `.item take <Charaktername> <Item> [Anzahl]` - Wenn man einem Charakter eine Item wegnehmen möchte. Wenn keine Anzahl angegeben wird, wird einfach 1. Item genommen. Auf Anführungszeichen achten wenn es sich um mehrere Wörter im Namen handelt. Bsp.: `.item remove Fabiii "Stein" 4`
+- `.item search <Name>` - Mit diesem Befehl kann nach Items gesucht werden. Sollte man nicht den genauen Namen kennen so können Wildcarts benutzt werden. `%` um nach beliebigen anderen Buchstaben oder Wörtern zu suchen. Bsp.: `.item search "%Stein%"` (Um das Ergebniss zu sehen probiere es einfach aus :D)
+
+### Crafting `.craft`
+
+- `.craft new <Herstellbares Item> <Benötigtes Item> <Anzahl>` - Darüber können Rezepte zu Items hinzugefügt werden. Bsp.: `. craft new "Tür" "Holz" 4`
+- `.craft remove <Herstellbares Item> <Benötigtes Item>` - Hier wird bei einem Rezept ein Item enfernt. Bsp.: `. craft remove "Tür" "Holz"`
+
+### Location `.loc`
+
+- `.loc show [Ortsname]` - Ohne Ortsname wird eine Übersicht alle verfügbaren Orte angezeigt. Wenn ein Ort angegeben wird, wird eine Liste angezeigt aller Items die an diesem Ort gefunden werden können.
+- `.loc new <Ortsname>` - Damit kann ein neuer Ort hinzugefügt werden Bsp.: `.craft new Polizei`
+- `-loc additem <Ortsname> <Itemname> <Wahrscheinlichkeit>` - Wenn ein Ort erstellt wurde kann man mit diesem Befehl Items hinzugefügt werden, die an diesem Ort gefunden werden können. Es wird immer nur gefunden was über diesen Befehl hinzugefügt wurde. Bsp.: `.craft additem Polizei AK-47 20`
+- `-loc additem <Ortsname> <Itemname>` - Damit kann ein Item wieder von einem Ort entfernt werden. So kann es nicht mehr an dem Ort gefunden werden. Bsp.: `.craft additem Polizei AK-47`
+
+### Handeln mit Händler `.trade`
+
+- `.tade additem <Itemname> <Anzahl> <Verkaufspreis> <Ankaufspreis>` - Mit diesem Befehl kann ein Item zum Händler hinzugefügt werden. Die Anzahl gibt an wie oft der Händler das Item verkauft. Der Verkaufspreis gibt an für wie viel Geld das Item verkauft wird. Wenn die Anzahl und der Verkaufspreis 0 ist wird das Item nur angekauft. Der Ankaufspreis gibt an für wie viel das Item angekauft wird. Wenn der Ankaufspreis 0 ist wird das Item nur verkauft.
+- `.trade removeitem <Itemname>` - Mit diesem Befehl wird das Item aus dem Angebot des Händlers herausgenommen.
+- `.trade list` - Hier werden die Angebote vom Händler angezeigt. Es gibt eine Kategorie für den Verkauf und eine für den Ankauf. Dieser Befehl funktionier auch wenn der Show Befehl der User deaktiviert wird.
+-  `. trade enable` / `.trade disable` - Dieser Befehl aktiviert bzw. deaktiviert den Shop im Bot. Es werden die Befehle `.trade show`, `.trade buy` und `trade sell` aktiviert bzw. deaktivert.
 
 # Changelog
 
@@ -60,7 +91,40 @@ Alle bemerkenswerten Änderungen an diesem Projekt werden in dieser Datei dokume
 
 # Released
 
+## 1.0.0 [02.07.2021]
+
+### Added
+
+#### Crafting `.craft`
+Es können jetzt Items hergestellt werden, die z.B. nicht gefunden werden können. Damit können Items in den Inventaren sinnvoller benutzt werden.
+
+#### Orte `.loc`
+Admins können hier neue Orte hinzugefügen und Items zu diesen hinzufügen die an diesem Ort gefunden werden können.
+
+#### Items `.item`
+Es wurde nun endlich ein Befehl hinzugefügt mit dem Items wieder gelöscht werden können.
+
+### Changed
+
+#### Looting `.loot`
+Das Lootingsystem wurde aktualisiert. Es kann nun an bestimmten Orten, die eingerichtet wurden, gesucht werden. Dies gibt die Möglichkeit bestimmte Items basierend auf Orte gefunden werde. So ist die Wahrscheinlichkeit höher, dass kein Müll gefunden werden.
+
+#### Inventar `.inv`
+Der Befehl `.inventory` wurde aus Einfacheit in `.inv` umbenannt.
+
+#### Geld `.money`
+Der Befehl `.money show` wurde in `.money info` umbennant.
+
+#### Hilfe `.help`
+Die HIlfe wurde aktualisiert und sieht nun schöner aus.
+
+#### Backend
+Der Techniker wird nun bei Fehlern mit der Datenbank benachrichtigt.
+
+
 ## 0.3.0 [12.06.2021]
+
+### Changed
 
 #### Item `.item`
 Das Team kann jetzt nach Items suchen um nicht mehr die ganze Liste nach einem bestimmten Item zu durchsuchen.
