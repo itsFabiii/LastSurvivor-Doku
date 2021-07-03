@@ -73,7 +73,8 @@ Beispiel: Das Item `Stein` kann so geschrieben werden. Sollte es aber `schwerer 
 ### Location `.loc`
 
 - `.loc show [Ortsname]` - Ohne Ortsname wird eine Übersicht alle verfügbaren Orte angezeigt. Wenn ein Ort angegeben wird, wird eine Liste angezeigt aller Items die an diesem Ort gefunden werden können.
-- `.loc new <Ortsname>` - Damit kann ein neuer Ort hinzugefügt werden Bsp.: `.craft new Polizei`
+- `.loc new <Ortsname>` - Damit kann ein neuer Ort hinzugefügt werden Bsp.: `.loc new Polizei`
+- `.loc delete <Ortsname>` - Damit kann ein neuer Ort wieder werden Bsp.: `.loc delete Polizei`
 - `-loc additem <Ortsname> <Itemname> <Wahrscheinlichkeit>` - Wenn ein Ort erstellt wurde kann man mit diesem Befehl Items hinzugefügt werden, die an diesem Ort gefunden werden können. Es wird immer nur gefunden was über diesen Befehl hinzugefügt wurde. Bsp.: `.craft additem Polizei AK-47 20`
 - `-loc additem <Ortsname> <Itemname>` - Damit kann ein Item wieder von einem Ort entfernt werden. So kann es nicht mehr an dem Ort gefunden werden. Bsp.: `.craft additem Polizei AK-47`
 
