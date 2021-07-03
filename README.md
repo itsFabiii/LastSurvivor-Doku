@@ -68,7 +68,7 @@ Beispiel: Das Item `Stein` kann so geschrieben werden. Sollte es aber `schwerer 
 ### Crafting `.craft`
 
 - `.craft new <Herstellbares Item> <Benötigtes Item> <Anzahl>` - Darüber können Rezepte zu Items hinzugefügt werden. Bsp.: `. craft new "Tür" "Holz" 4`
-- `.craft remove <Herstellbares Item> <Benötigtes Item>` - Hier wird bei einem Rezept ein Item enfernt. Bsp.: `. craft remove "Tür" "Holz"`
+- `.craft remove <Herstellbares Item>` - Hier wird bei einem Rezept ein Item enfernt. Bsp.: `. craft remove "Tür"`
 
 ### Location `.loc`
 
