@@ -199,22 +199,20 @@ Daten und Charaktere werden beim verlassen gelöscht.
 
 # Unreleased
 
-## 1.0.0 [kein Datum]
+## 2.0.0 [kein Datum]
 
-#### Looting
-Das Lootingsystem soll überarbeitet werden und abhänging von Orten sein. Zudem soll beim Looting eine Geschwindigkeit gewählt werden, bei dem abhäning der Zeit besseres Loot gefunden werden kann.
-Auch sollen besondere Dropevents hinzugefügt werden, die vom Team gedroppt werden können.
+#### Allgemein
+Mit hoher Wahrscheinlichkeit werden `/` Befehle eingeführt. Diese vereinfachen deutlich den Gebrauch der Befehle.
 
-#### Items
-Ein Craftingsystem soll hinzugefügt werden mit dem aus einzelnen Items neue Items gebaut werden können.
-
-#### Handelssystem
-Ein System mit dem Spieler untereinander aber auch mit verschiedenen Händlern Items traden können.
-
-#### Base Building
-INFOS FOLGEN
+#### Level UP System
+Funktion bei der man für sein Charakter Erfahrung sammeln kann um verbesserungen für Befehle zu bekommen.
 
 #### Webpage
 Eine Webseite über die Infos zu Charakteren und Inventaren angezeigt werden soll.
+Teammember können hier dann auch Items besser einsehen und bearbeiten und andere Info erhalten.
+
+#### Backend
+Die Art und Weise wie der Bot mit der Datenbank kommuniziert soll verändert werden.
+Texte werden sollen in einer extra Datei gespeichert werden, damit diese leichter zu ändern sind.
 
 
